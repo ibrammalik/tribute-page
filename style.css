@@ -8,7 +8,33 @@
   margin: auto;
   text-align: center;
 }
-#title h4 {
+
+#img-div {
   margin: auto;
   text-align: center;
+}
+
+#image {
+  width: 80%;
+  max-width: 700px;
+}
+
+#tribute-info {
+  margin: 2rem 25%;
+  text-align: justify;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+li span {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@media (max-width: 1114px) {
+  #tribute-info {
+    margin: 2rem 10%;
+  }
 }
