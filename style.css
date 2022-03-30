@@ -3,3 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+#title {
+  margin: auto;
+  text-align: center;
+}
+#title h4 {
+  margin: auto;
+  text-align: center;
+}
