@@ -4,19 +4,32 @@
   box-sizing: border-box;
 }
 
+#first-page {
+  height: 100vh;
+}
+
+section {
+  margin-top: 1rem;
+}
+
 #title {
-  margin: auto;
+  margin: 10px auto;
   text-align: center;
 }
 
 #img-div {
   margin: auto;
   text-align: center;
+  height: 80vh;
 }
 
 #image {
+  object-fit: cover;
   width: 80%;
   max-width: 700px;
+  height: 90%;
+  border-radius: 5px;
+  margin: 20px auto;
 }
 
 #tribute-info {
@@ -24,8 +37,18 @@
   text-align: justify;
 }
 
+#quote {
+  margin: 2rem 25%;
+  text-align: center;
+}
+
+#author {
+  margin-top: 20px;
+}
+
 li {
   margin-top: 1rem;
+  list-style: none;
 }
 
 li span {
@@ -33,8 +56,15 @@ li span {
   font-size: 1rem;
 }
 
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: silver;
+}
+
 @media (max-width: 1114px) {
-  #tribute-info {
+  #tribute-info,
+  #quote {
     margin: 2rem 10%;
   }
 }
