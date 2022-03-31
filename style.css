@@ -4,23 +4,34 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 #first-page {
   height: 100vh;
 }
 
-section {
-  margin-top: 1rem;
+#title {
+  text-align: center;
 }
 
-#title {
-  margin: 10px auto;
-  text-align: center;
+#title h1 {
+  padding: 0.5rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  display: inline-block;
+  width: 90%;
+  border-radius: 10px;
+  position: sticky;
+  top: 0;
 }
 
 #img-div {
-  margin: auto;
   text-align: center;
-  height: 80vh;
+  height: 50vh;
 }
 
 #image {
@@ -29,31 +40,51 @@ section {
   max-width: 700px;
   height: 90%;
   border-radius: 5px;
-  margin: 20px auto;
 }
 
-#tribute-info {
-  margin: 2rem 25%;
-  text-align: justify;
+#img-caption {
+  font-size: 2rem;
 }
 
 #quote {
-  margin: 2rem 25%;
+  margin: 3rem 25% 0rem 25%;
   text-align: center;
+  line-height: 1.5rem;
+  border-radius: 5px;
+  background-color: white;
+  padding: 2rem;
+  font-size: x-large;
+  font-style: italic;
 }
 
 #author {
-  margin-top: 20px;
+  margin-top: 10px;
+}
+
+#sub-title {
+  text-align: center;
+}
+
+#tribute-info {
+  margin: 4rem 25%;
+  text-align: justify;
+  padding: 2rem 2rem;
+  background-color: white;
 }
 
 li {
   margin-top: 1rem;
   list-style: none;
+  line-height: 1.5rem;
 }
 
 li span {
   font-weight: 700;
   font-size: 1rem;
+}
+
+#bottom-note {
+  margin: 2rem auto;
 }
 
 footer {
@@ -63,8 +94,16 @@ footer {
 }
 
 @media (max-width: 1114px) {
-  #tribute-info,
+  #tribute-info {
+    margin: 0 10%;
+  }
   #quote {
-    margin: 2rem 10%;
+    margin: 2rem 10% 0rem 10%;
+  }
+}
+
+@media (max-height: 414px) {
+  #first-page {
+    height: 500px;
   }
 }
